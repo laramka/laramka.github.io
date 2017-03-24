@@ -1,0 +1,181 @@
+header
+	.top-header
+		min-height: 24px
+		background: #2c3d61
+		border-bottom: 1px solid #1c2f55
+		.text
+			float: right
+			margin-right: 11px
+			span
+				a
+					font-size: 12px
+					color: #fff
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+			+phone-mini
+				float: none
+				display: block
+				padding: 5px 0 5px 17px
+				margin: 0
+			.left
+				position: relative
+				margin-right: 18px
+				&:after
+					content: ""
+					+position(1px, -11px, auto, auto)
+					width: 1px 
+					height: 18px
+					background: #fff
+				+phone-mini
+					float: left
+					margin: 0 0 10px 0
+					&:after
+						width: 0
+			.right
+				+phone-mini
+					float: left
+					clear: left
+	.main-header
+		min-height: 94px
+		border-top: 1px solid #fff
+		background: #fff
+		+phone-mini
+			padding-top: 10px
+		.logo
+			float: left
+			margin: 5px 0 0 16px
+		.menu-btn
+			width: 66px
+			height: 66px
+			background: #2c3d61
+			position: absolute
+			top: 10px
+			right: 10px
+			display: none
+			+tablet-mini
+				display: block
+			+phone-mini
+				width: 50px
+				height: 50px
+			span
+				display: block
+				width: 18px
+				height: 2px
+				background: #fff
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -1px 0 0 -9px
+				&::after, &::before
+					content: ""
+					display: block
+					width: 18px
+					height: 2px
+					background: #fff
+					position: absolute
+					left: 0px
+				&::before
+					top: -6px
+				&::after
+					top: 6px
+			&.is-active span::after,
+				transform: rotate(-45deg)
+				top: 0
+			&.is-active span::before,
+				transform: rotate(45deg)
+				top: 0
+			&.is-active span
+				background: transparent
+		.nav-menu
+			float: left
+			margin: 34px 0 0 191px
+			ul
+				list-style: none
+				li
+					display: inline-block
+					padding: 0 9px
+					border-right: 1px solid #b9b9b9
+					a
+						text-decoration: none
+						color: #2c3d61
+						font-size: 14px
+						&:hover
+							text-decoration: underline
+				& :last-child
+					border-right: none
+			+lg
+				margin: 34px 0 0 10px
+			+md
+				margin: 34px 0 0 5%
+			+tablet-mini
+				display: none
+				z-index: 111
+				width: 80%
+				margin: 20px 0
+				ul
+					li
+						display: block
+						margin: 8px 0
+						padding: 0 0 0 20px
+						border: none
+						a
+							font-weight: 700
+		.search
+			float: right
+			margin: 25px 24px 0 0 
+			position: relative
+			.search-btn
+				width: 230px
+				height: 33px
+				border: 1px solid #b9b9b9
+				outline: none
+				border-radius: 9px 3px 3px 9px
+				padding: 0 0 0 10px
+				+md
+					width: 100%
+				@extend %ff_exo_regular
+			a.icon
+				padding: 6px 8px
+				background: #2c3d61
+				border-radius: 0 3px 3px 0
+				+position(0px, 0px, auto, auto)
+			+md
+				float: right
+				margin: 20px 10% 20px 0
+				width: 80%	
+	.img-block
+		height: 400px
+		background: url(../upload/main-pic.jpg) 50% 0 no-repeat
+		background-size: cover
+		+phone-medium
+			height: 350px
+		+phone-mini
+			height: 320px
+		+phone-small
+			height: 280px
+		.container
+			padding: 5% 0 0 7%
+			+tablet-mini
+				padding: 15% 0 0 7%
+			+phone-medium
+				padding: 20% 0 0 7%
+			.text
+				h1
+					font-size: 48px
+					@extend %ff_exo_extrabold
+					color: #fff
+					line-height: 1.22
+					+tablet-mini
+						font-size: 40px
+					+phone-medium
+						font-size: 34px
+					+phone-mini
+						font-size: 29px
+					+phone-small
+						font-size: 25px
+
+
+				
+
+

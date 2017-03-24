@@ -1,0 +1,54 @@
+.citizens-block
+	padding: 0 10px 46px 12px
+	h4
+		margin: 24px 0 0 6px
+		+phone-small
+			font-size: 30px
+		a
+			text-decoration: none
+			@extend %ff_exo_bold
+			color: #2c3d61
+			font-size: 36px
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 60px
+				left: 0px
+				width: 117px
+				height: 7px
+				background: #2c3d61
+			+phone-small
+				font-size: 32px
+				&:after
+					top: 50px
+	.words-block
+		margin-top: 46px
+		position: relative
+		ul
+			list-style: none
+			li
+				display: inline-block
+				background: #dcdcdc
+				padding: 5px 10px
+				margin-bottom: 9px
+				margin-right: 5px
+				a
+					text-decoration: none
+					color: #464646
+					font-size: 18px
+		.bank-img
+			+position(auto, 0, 8px, auto)
+			+md
+				display: none
+	.pics-block
+		margin-top: 27px
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin: 0 5px
+				+phone-small
+					width: 100%
+					text-align: center
+					

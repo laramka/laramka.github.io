@@ -1,0 +1,68 @@
+.contacts-block
+	background: $white
+	text-align: center
+	padding: 73px 0 85px 0
+	@import partial/main-text
+	p.descr
+		font:
+			weight: 600
+			size: 18px
+		color: $dark-blue
+		margin: 29px 0 72px 0
+	.contact
+		margin: 0 17%
+		text-align: left
+		+clearfix
+		span
+			font:
+				weight: 700
+				size: 24px
+			color: $dark-blue
+			display: block
+		input
+			width: 48%
+			height: 42px
+			border: none
+			border-bottom: 1px solid $grey-border
+			margin-top: 38px
+			padding: 0px 0 7px 0
+			font-size: 13px
+			color: $grey
+			&.error
+				border-color: red
+			&.active
+				border-color: green
+			+tablet
+				width: 100%
+		input.email
+			float: right
+		textarea.message
+			width: 100%
+			height: 35px
+			resize: none
+			border: none
+			border-bottom: 1px solid $grey-border
+			margin-top: 45px
+			font-size: 13px
+			color: $grey
+			&.error
+				border-color: red
+			&.active
+				border-color: green
+		button.send
+			border: none
+			color: black
+			background: #fff
+			font-size: 16px
+			float: right
+			margin-top: 32px
+			position: relative
+			&::before
+				content: ""
+				width: 23px
+				height: 16px
+				background: url(../img/send-ic.png) 0 0 no-repeat
+				+position(3px, auto, auto, -31px)
+
+		
+

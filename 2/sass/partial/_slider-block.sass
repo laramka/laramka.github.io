@@ -1,0 +1,61 @@
+.slider-block
+	.slide
+		outline: none
+		width: 1600px
+		height: 510px
+		background: url(../upload/slider-bg.jpg) 0 0 no-repeat
+		background-size: cover
+		.container
+			text-align: center
+			margin-top: 156px
+			color: $white
+			h1
+				font:
+					weight: 700
+					size: 62px
+			p
+				font:
+					weight: 300
+					size: 48px
+				margin: -47px 0 23px 0
+			p.styled
+				font:
+					weight: 300
+					size: 18px
+				position: relative
+				display: inline-block
+				&::after, &::before
+					content: ""
+					width: 28px
+					height: 1px
+					background: #0feb9e
+				&::after
+					+position(11px, -59px, auto, auto)
+				&::before
+					+position(11px, auto, auto, -59px)
+
+ul.slick-dots
+	list-style: none
+	position: absolute
+	bottom: 39px
+	left: 48%
+	margin-left: -46px
+	li
+		display: inline-block
+		margin: 0 4px
+		button
+			outline: none
+			border-radius: 50%
+			font-size: 0
+			background: transparent 
+			border: none
+			width: 5px
+			height: 15px
+			border: 2px solid $grey
+			
+	.slick-active
+		button
+			background: #fff
+			border: none
+			width: 5px
+			height: 11px

@@ -1,0 +1,23 @@
+.main-text
+	text-align: center
+	h4
+		a
+			font:
+				weight: 800
+				size: 28px
+			text:
+				transform: uppercase
+				decoration: none
+			color: $blue
+		margin-bottom: 17px
+	span
+		position: relative
+		&::after, &::before
+			content: ""
+			width: 91px
+			height: 1px
+			background: $grey-border
+		&::after
+			+position(auto, 31px, 9px, auto)
+		&::before
+			+position(auto, auto, 9px, 31px)

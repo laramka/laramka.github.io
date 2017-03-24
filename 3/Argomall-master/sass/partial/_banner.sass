@@ -1,0 +1,120 @@
+.banner
+	min-height: 477px
+	background: url(../upload/banner-bg.jpg) 0 0 no-repeat
+	background-size: cover
+	.container
+		&:after
+			content: ""
+			width: 310px
+			height: 340px
+			+position (auto, 144px, 50px, auto)
+			background: url(../img/banner-robot.png) 0 35px no-repeat
+			+lg
+				+position (auto, 50px, 0px, auto)
+			+md
+				+position (auto, 30px, -16px, auto)
+			+tablet
+				+position (auto, 0px, -100px, auto)
+				background-size: 90%
+			+tablet-mini
+				+position (auto, 0px, -80px, auto)
+				background-size: 80%
+			+phone-medium
+				width: 250px
+				+position (auto, 0, -120px, auto)
+			+phone-mini
+				width: 200px
+				+position (auto, 0, -140px, auto)
+			+phone-small
+				width: 170px
+				+position (auto, 0, -160px, auto)
+		.text
+			padding-top: 71px
+			position: relative
+			padding-bottom: 60px
+			+lg
+				padding-left: 10px
+			+phone
+				padding-bottom: 90px
+			+phone-mini
+				padding: 55px 25px 120px 25px
+			
+			h1
+				max-width: 640px
+				font-size: 50px
+				line-height: 62px
+				color: #fff
+				font-weight: 600
+				+tablet
+					font-size: 45px
+					line-height: 50px
+					padding-right: 10px
+					width: 80%
+				+tablet-mini
+					font-size: 40px
+					line-height: 45px
+				+phone
+					font-size: 35px
+					line-height: 40px
+				+phone-mini
+					font-size: 30px
+					line-height: 36px
+					width: 100%
+			p
+				max-width: 640px
+				font-size: 16px
+				line-height: 24px
+				color: #fff
+				margin-top: 15px
+				+tablet
+					font-size: 14px
+					line-height: 20px
+					padding-right: 10px
+					width: 80%
+				+phone-mini
+					width: 100%
+			ul
+				list-style: none
+				margin-top: 27px
+				li
+					display: inline-block
+					width: 115px
+					padding: 0 4px 0 35px
+					float: left
+					&.fast
+						width: 140px
+					+tablet-mini
+						&.credit
+							margin-bottom: 15px
+						&.fast
+							margin-bottom: 15px
+						&.id
+							clear: left
+					a
+						text-decoration: none
+						color: #fff
+						font-size: 11px
+						&:hover
+							text-decoration: underline
+					&.credit
+						background: url(../img/banner-benefit-icon-1.png) 0 0 no-repeat
+					&.fast
+						background: url(../img/banner-benefit-icon-2.png) 0 0 no-repeat
+					&.id
+						background: url(../img/banner-benefit-icon-3.png) 0 0 no-repeat
+					&.safe
+						background: url(../img/banner-benefit-icon-4.png) 0 0 no-repeat
+			.button
+				margin-top: 58px
+				a
+					font-weight: 700
+					color: #1a81c5
+					font-size: 16px
+					line-height: 26px
+					text-decoration: none
+					background: #fff
+					padding: 19px 45px
+					&:hover
+						text-decoration: underline
+
+					

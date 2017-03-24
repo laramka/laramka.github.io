@@ -1,0 +1,49 @@
+.works-block
+	background: $white
+	padding: 74px 0 0 0
+	.text
+		text-align: center
+		.container
+			padding: 0 100px
+		@import partial/main-text
+		p.desc
+			font:
+				weight: 600
+				size: 18px
+			line-height: 24px
+			color: $dark-blue
+			margin-top: 29px
+		ul.types
+			list-style: none
+			margin-top: 54px
+			li
+				display: inline-block
+				margin: 0 2px
+				a
+					padding: 6px 20px
+					text-decoration: none
+					font:
+						weight: 700
+						size: 14px
+					color: $dark-blue
+					&.active
+						background: $blue
+						border-radius: 6px
+						color: $white
+	.portfolio
+		margin-top: 42px
+		.port-items
+			font-size: 0
+			.port-item
+				width: 25%
+				height: 300
+				overflow: hidden
+				display: inline-block
+				cursor: pointer
+				+lg
+					width: 33%
+				+tablet-mini
+					width: 50%
+				img
+					width: 100%
+					height: auto

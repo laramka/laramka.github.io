@@ -1,0 +1,43 @@
+.features-block
+	background: #f4f7f9
+	padding: 51px 0 121px 0
+	@import partial/main-text
+	.feature-items
+		padding: 39px 0 0 0
+		+flex
+		.f-item
+			width: 32%
+			padding: 0 0 0 69px
+			+tablet
+				width: 100%
+				margin: 0 10px
+			h6
+				a
+					font:
+						weight: 600
+						size: 20px
+					text-decoration: none
+					color: $dark-blue
+				margin-bottom: 0px
+				position: relative
+				&::before
+					content: ""
+					cursor: pointer
+					+position(0px, auto, auto, -58px)
+					width: 43px
+					height: 43px
+					background: url(../img/features-sprite.png) 0 0 no-repeat
+			p
+				font-size: 13px
+				line-height: 21px
+				color: $grey
+				margin-top: 16px	
+		.item-2
+			h6::before
+				background-position: 0 -43px
+		.item-3
+			h6::before
+				background-position: 0 -86px
+			
+
+

@@ -1,0 +1,88 @@
+=clearfix
+	&::after
+		clear: both
+		content: ""
+		display: table
+
+=flex
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: justify
+	-moz-box-pack: justify
+	-webkit-justify-content: space-between
+	-ms-flex-pack: justify
+	justify-content: space-between
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+
+=flex_no_space
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: justify
+	-moz-box-pack: justify
+	-webkit-justify-content: space-none
+	-ms-flex-pack: justify
+	justify-content: space-none
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+
+=placeholder()
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+=position($top,$right,$bot,$left)
+	position: absolute
+	top: $top
+	left: $left
+	right: $right
+	bottom: $bot
+
+=shadow($shadow)
+	-webkit-box-shadow: $shadow
+	-moz-box-shadow: $shadow
+	box-shadow: $shadow
+=bg
+	@media (max-width: 1220px)
+		@content
+=lg
+	@media (max-width: 1180px)
+		@content
+=md
+	@media (max-width: 1020px)
+		@content
+=tablet-bg
+	@media (max-width: 960px)
+		@content
+=tablet
+	@media (max-width: 860px)
+		@content
+=tablet-mini
+	@media (max-width: 780px)
+		@content
+=phone
+	@media (max-width: 640px)
+		@content
+=phone-medium
+	@media (max-width: 600px)
+		@content
+=phone-mini
+	@media (max-width: 500px)
+		@content
+=phone-small
+	@media (max-width: 410px)
+		@content
+

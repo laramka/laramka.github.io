@@ -1,0 +1,42 @@
+.fact-block
+	background: url(../upload/fact-bg.jpg) 0 0 no-repeat
+	background-size: cover
+	@import partial/main-text
+	padding: 75px 0 150px 0 
+	.fact-items
+		margin-top: 20px
+		+flex
+		.fact-item
+			width: 23%
+			padding: 163px 0 0 0 
+			text-align: center
+			position: relative
+			+tablet
+				width: 48%
+				margin-bottom: 50px
+			h5
+				a
+					font:
+						weight: 600
+						size: 60px
+					color: $white
+					text-decoration: none
+				margin: 0
+			p
+				font-size: 18px
+				color: $white
+				text-transform: uppercase
+				margin: 0
+			&::before
+				content: ""
+				width: 133px
+				height: 133px
+				+position(0px, auto, auto, 50%)
+				margin-left: -67px
+				background: url(../img/fact-sprite.png) 0 0 no-repeat
+			&.item-2::before
+				background-position: 0 -135px
+			&.item-3::before
+				background-position: 0 -272px
+			&.item-4::before
+				background-position: 0 -407px

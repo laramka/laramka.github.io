@@ -1,0 +1,254 @@
+.calculate-block
+	background: #fff
+	.container
+		text-align: center
+		padding: 42px 0 60px 0
+		.top
+			max-width: 512px
+			display: inline-block
+			padding: 0 5px
+			h4
+				color: #3d3d3d
+				font-size: 28px
+				line-height: 36px
+				text-transform: uppercase
+				+phone
+					font-size: 24px
+					line-height: 30px
+				+phone-mini
+					font-size: 20px
+					line-height: 26px
+			p
+				font-size: 14px
+				line-height: 20px
+				color: #3d3d3d
+				font-weight: 700
+				margin-top: 10px
+				a
+					color: #1781ca
+			.tabs
+				margin-top: 25px
+				div
+					display: inline-block
+					width: 128px
+					height: 128px
+					border-radius: 50%
+					background: #fff url(../img/device-1.png) 52% 34% no-repeat
+					margin-right: 5px
+					+phone-mini
+						width: 104px
+						height: 104px
+					+phone-small
+						width: 90px
+						height: 90px
+					p
+						color: #afafaf
+						font-size: 14px
+						margin-top: 62%
+						font-weight: 400
+						+phone-mini
+							font-size: 12px
+						+phone-small
+							font-size: 11px
+					&:hover
+						cursor: pointer
+					&.laptop
+						background: #fff url(../img/device-2.png) 52% 34% no-repeat
+					&.tv
+						background: #fff url(../img/device-3.png) 52% 34% no-repeat
+					&.active
+						background: #1781ca url(../img/device-1-active.png) 52% 34% no-repeat
+						p
+							color: #fff
+						&.laptop
+							background: #1781ca url(../img/device-2-active.png) 52% 34% no-repeat
+						&.tv
+							background: #1781ca url(../img/device-3-active.png) 52% 34% no-repeat
+		.bottom
+			display: none
+			&.active
+				display: block
+			+tablet-bg
+				text-align: center
+			.result-block
+				max-width: 370px
+				float: right
+				+tablet-bg
+					clear: left
+					float: none
+					display: inline-block
+					margin-top: 30px
+					
+				.content
+					background: #f7f7f7
+					padding: 35px 48px 27px 48px
+					+phone-small
+						padding: 35px 15px 27px 15px
+					p.descr
+						font-size: 16px
+						color: #333333
+						font-weight: 500
+						margin-top: 27px
+					p.price
+						font-weight: 700
+						color: #1781ca
+						font-size: 18px
+						span
+							font-size: 40px
+					ul
+						list-style: none
+						margin-top: 11px
+						li
+							background: url(../img/border.png) 0 0 repeat-x, url(../img/results-ic-1.png) 5px 26px no-repeat
+							padding: 20px 0 13px 40px
+							text-align: left
+							&.second
+								background: url(../img/border.png) 0 0 repeat-x, url(../img/results-ic-2.png) 5px 26px no-repeat
+							&.third
+								background: url(../img/border.png) 0 0 repeat-x, url(../img/border.png) 0 100% no-repeat, url(../img/results-ic-3.png) 5px 26px no-repeat
+							p
+								font-size: 13px
+								line-height: 18px
+								color: #616161
+					.button
+						margin-top: 41px
+						a.btn
+							font-weight: 500
+							font-size: 16px
+							line-height: 26px
+							color: #fff
+							background: #1781ca
+							text-decoration: none
+							padding: 17px 34px
+							&:hover
+								text-decoration: underline
+				p.comment
+					color: #828282
+					font-size: 12px
+					line-height: 16px
+					margin-top: 21px
+					padding: 0 5px
+			.price-block
+				margin-top: 29px
+				width: 58%
+				float: left
+				+tablet-bg
+					width: 100%
+				.list
+					.item
+						padding: 28px 0 77px 0
+						border-bottom: 1px solid #ebebeb
+						text-align: left
+						position: relative
+						+bg
+							padding: 28px 0 77px 10px
+						span.type-action
+							color: #333333
+							font-size: 18px
+							line-height: 26px
+							font-weight: 600
+							position: relative
+							+phone-mini
+								font-size: 14px
+							&:after
+								cursor: pointer
+								text-align: center
+								content: "?"
+								font-size: 12px
+								line-height: 20px
+								width: 20px
+								height: 20px
+								position: absolute
+								top: -2px
+								right: -28px
+								border-radius: 50%
+								background: #e9e9e9
+						#slider-range-min
+							width: 70%
+							margin-top: 20px
+							+phone-mini
+								width: 90%
+							&:after
+								content: "3 866 PHP"
+								width: 100px
+								height: 15px
+								+position (auto, auto, -34px, 6px)
+								color: #aeaeae
+								font-size: 12px
+								line-height: 26px
+							&:before
+								content: "51 546 PHP"
+								width: 100px
+								height: 15px
+								+position (auto, -33px, -33px, auto)
+								color: #aeaeae
+								font-size: 12px
+								line-height: 26px
+						input
+							position: absolute
+							top: 54px
+							right: 5px
+							width: 25%
+							max-width: 170px
+							height: 50px
+							background: #f4f4f4 url(../img/input-icon.png) 90% 14px no-repeat
+							border: 1px solid #d9d9d9
+							outline: none
+							font-size: 16px
+							line-height: 26px
+							color: #3d3d3d
+							font-weight: 500
+							padding: 0 40px 0 11px
+							cursor: pointer
+							border-radius: 4px
+							+phone-mini
+								font-size: 12px
+								top: 12px
+								right: 5px
+								width: 120px
+					.item-2
+						#slider-range-min:after
+							content: "2 688 PHP"
+						#slider-range-min:before
+							content: "9 000 PHP"		
+					.item-3
+						#slider-range-min:after
+							content: "9 months"
+						#slider-range-min:before
+							content: "15 months"		
+						border-bottom: none
+
+								
+
+
+
+.ui-widget-header 
+	background: #1781ca
+	border-radius: 5px
+
+.ui-widget.ui-widget-content 
+	background: #e9e9e9
+	border: none
+	border-radius: 5px
+	height: 10px
+
+.ui-slider .ui-slider-handle 
+	position: absolute
+	margin-top: -5px
+	z-index: 2
+	width: 29px
+	height: 29px
+	cursor: pointer
+	border-radius: 50%
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active 
+	border: 1px solid #d2d2d2
+	background: url(../img/range.png) -1px -1px no-repeat
+	font-weight: normal
+	color: #fff
+	outline: none

@@ -1,0 +1,78 @@
+.work-block
+	background: #f7f7f7
+	.container
+		text-align: center
+		padding: 90px 0 0 0 
+		+phone-mini
+			padding: 61px 0 0 0
+		h4
+			color: #3d3d3d
+			font-size: 28px
+			line-height: 36px
+			text-transform: uppercase
+			+phone-mini
+				font-size: 20px
+		.list
+			margin-top: 45px
+			+phone
+				display: none
+			+flex
+			.item
+				width: 33%
+				+tablet
+					width: 50%
+				a
+					display: block
+					text-decoration: none
+					margin: 14px 35px 55px 35px
+					color: #3d3d3d
+					font-size: 16px
+					line-height: 22px
+					font-weight: 600
+					&:hover
+						text-decoration: underline
+		.slider
+			display: none
+			margin-top: 19px
+			+phone
+				display: block
+			.item
+				outline: none
+				img
+					display: inline-block
+				a
+					display: block
+					text-decoration: none
+					margin: 14px 10% 55px 10%
+					color: #3d3d3d
+					font-size: 16px
+					line-height: 22px
+					font-weight: 600
+					+phone-mini
+						font-size: 14px
+						line-height: 20px
+					&:hover
+						text-decoration: underline
+
+
+ul.slick-dots
+	list-style: none
+	margin-top: -16px
+	li
+		display: inline-block
+		margin: 7px 2px
+		button
+			border-radius: 50%
+			font-size: 0
+			width: 15px
+			height: 15px
+			background: #fff 
+			border: 2px solid #1781ca
+			outline: none
+			cursor: pointer
+	.slick-active
+		button
+			background: #1781ca
+			border: none
+			width: 15px
+			height: 15px

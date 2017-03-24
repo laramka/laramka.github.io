@@ -1,0 +1,106 @@
+footer
+	background: #dee0e2
+	.column
+		float: left
+		width: 33%
+		ul
+			list-style: none
+			li
+				margin: 21px 0
+				a
+					color: #333333
+					font-size: 18px
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+		h4
+			margin: 16px 0 0 0px
+			a
+				text-decoration: none
+				@extend %ff_exo_bold
+				color: #2c3d61
+				font-size: 36px
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					top: 60px
+					left: 0px
+					width: 117px
+					height: 7px
+					background: #2c3d61
+				+phone-small
+					font-size: 30px
+					&:after
+						top: 50px
+	.first
+		padding: 0 0 0 2%
+		position: relative
+		ul
+			margin-top: 41px
+			padding-right: 6%
+			.icon
+				margin-top: -16px
+		& ::after
+			content: ""
+			+position(95px, 0, auto, auto)
+			width: 1px
+			height: 144px
+			background: #ababab
+			+phone
+				width: 100%
+				height: 1px
+				+position(auto, auto, 0, 0)
+		+md
+			width: 50%
+		+phone
+			width: 100%
+			padding: 0 0 20px 5%
+	.second
+		padding: 0 0 0 2%
+		position: relative
+		.download
+			margin-top: 36px
+			img.appstore
+				margin-right: 13px
+		& ::after
+			content: ""
+			+position(95px, 0, auto, auto)
+			width: 1px
+			height: 144px
+			background: #ababab
+			+md
+				width: 0
+			+phone
+				width: 100%
+				height: 1px
+				+position(auto, auto, 0, 0)
+		+md
+			width: 50%
+		+phone
+			width: 100%
+			padding: 0 0 20px 5%
+	.third
+		padding: 0 0 20px 2%
+		ul
+			margin-top: 41px
+		.social
+			margin-top: 30px
+			a
+				margin-right: 3px
+		+md
+			width: 100%
+		+phone
+			padding: 0 0 20px 5%
+.copyright
+	height: 40px
+	background: #3a3a3a
+	text-align: center
+	p
+		color: #fefefe
+		font-size: 14px
+		line-height: 40px
+		+phone-mini
+			font-size: 11px
+		+phone-small
+			font-size: 9px

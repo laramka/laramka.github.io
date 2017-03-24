@@ -1,0 +1,19 @@
+.item{
+	width: 28%;
+	height: 380px;
+	margin-left: 1%;
+	margin-bottom: 1%;
+	background: #f7f7f7;
+	float: left;
+	text-align: center;
+}
+.item a{
+	text-decoration: underline;
+	color: #1781ca;
+	font-size: 18px;
+}
+.item p{
+	text-align: left;
+	margin-left: 5px;
+	color: #ef2121;
+}
